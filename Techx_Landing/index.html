@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assests/images/Logo bmtech.png" alt="Logo" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        
+        
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonial</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pricing">Price</a></li>
+              <li4class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+  </header>
+
+  <section class="hero-section" id="home" style="
+  position: relative; 
+  background-image: url('assests/images/tech.jpeg') ;
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;">
+  <!-- Overlay -->
+  <div style="
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      bottom: 0; 
+      background-color: rgba(0, 0, 0, 0.7); /* Increased opacity for a darker effect */
+      z-index: 0;">
+  </div>
+
+  <!-- Content -->
+  <div class="container text-center" style="position: relative; z-index: 1;">
+      <!-- Heading -->
+      <h1 class="display-4 mb-4" style="color: #FFD700;">Transforming Digital Dreams into Reality</h1>
+
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+              <p class="lead mb-4" style="color: #fff; text-align: left;">
+                  At BM TECHX, we craft innovative digital solutions to transform your business. From result-driven strategies to advanced technology, we empower your brand to thrive in the digital era. Let’s make your business future-ready.
+              </p>
+          </div>
+      </div>
+
+      <a href="#contact" class="btn btn-custom btn-lg">Get in Touch</a>
+  </div>
+</section>
+
+
+<section class="about-section py-5" id="about" style="background-color: black; position: relative;">
+  <div class="row align-items-center">
+    <!-- Image (left side) -->
+    <div class="col-12 col-md-6" id="about-image">
+      <img src="assests/images/aout.jpeg" alt="About Image" class="img-fluid slide-in" />
+    </div>
+
+    <!-- Text Content (Right side) -->
+    <div class="col-12 col-md-6 text-yellow">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div id="about-paragraph">
+        <p class="lead mb-4 about-line">
+          At BM TECHX, we are a team of passionate problem-solvers who love creating impactful digital solutions. Whether it’s building modern websites, designing user-friendly apps, or boosting your online presence, we’re here to make your business shine.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<h2 class="text-center mb-4" id="services">Our Services</h2>
+<div class="container my-5" >
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Card 1 -->
+            <div class="carousel-item active">
+                <div class="card text-center bg-secondary text-white mx-auto" style="max-width: 18rem;">
+                    <img src="assests/images/digital.jpeg" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Marketing Solutions</h5><hr>
+                        <p class="card-text">Our expert strategies drive traffic, boost engagement, and maximize conversions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="carousel-item">
+                <div class="card text-center bg-secondary text-white mx-auto" style="max-width: 18rem;">
+                    <img src="assests/images/seo.jpeg" class="card-img-top" alt="Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO Optimization</h5><hr>
+                        <p class="card-text">
+                          Get your website ranked on top with our tailored SEO strategies.
+                          </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="carousel-item">
+                <div class="card text-center bg-secondary text-white mx-auto" style="max-width: 18rem;">
+                    <img src="assests/images/app.jpeg" class="card-img-top" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App Development
+                        </h5><hr>
+                        <p class="card-text">Develop user-friendly mobile applications to connect with customers anytime, anywhere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="carousel-item">
+                <div class="card text-center bg-secondary text-white mx-auto" style="max-width: 18rem;">
+                    <img src="assests/images/we.jpeg" class="card-img-top" alt="Card 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development Services
+                        </h5><hr>
+                        <p class="card-text">Craft stunning websites with interactive designs and seamless functionality, powered by cutting-edge technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card text-center bg-secondary text-white mx-auto" style="max-width: 18rem;">
+                  <img src="assests/images/graphic.jpeg" class="card-img-top" alt="Card 4">
+                  <div class="card-body">
+                      <h5 class="card-title">Graphic Design
+
+                      </h5><hr>
+                      <p class="card-text">We create unique logos and eye-catching graphics to elevate your business identity. Our services also include UI/UX design and video graphics to enhance user experiences and social media impact.
+
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card text-center bg-secondary text-white mx-auto" style="max-width: 18rem;">
+                <img src="assests/images/gm.jpeg" class="card-img-top" alt="Card 4">
+                <div class="card-body">
+                    <h5 class="card-title">Google My Business (GMB) Design
+                    </h5> <hr>
+                    <p class="card-text">Optimize your Google My Business profile with professional graphics and designs to attract more local customers and enhance your online visibility.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card text-center bg-secondary text-white mx-auto" style="max-width: 18rem;">
+              <img src="assests/images/ecommerce.jpeg" class="card-img-top" alt="Card 4">
+              <div class="card-body">
+                  <h5 class="card-title">E-commerce & Hosting Solutions
+
+                  </h5> <hr>
+                  <p class="card-text">Build and scale your online store with secure, high-performance hosting services.
+
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card text-center bg-secondary text-white mx-auto" style="max-width: 18rem;">
+            <img src="assests/images/social.jpeg" class="card-img-top" alt="Card 4">
+            <div class="card-body">
+                <h5 class="card-title">Social Media Management & Content Creation
+
+                </h5> <hr>
+                <p class="card-text">Elevate your brand with tailored social media strategies and eye-catching content that drives engagement. From strategic planning to creative designs, we ensure your brand connects with its audience effectively.
+                </p>
+            </div>
+        </div>
+    </div>
+        
+        </div>
+  
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </div>
+  
+<h2 class="text-center mb-4"  id="clients">Our Partners</h2>
+<section class="partners-section">
+
+  <div class="partners-logos">
+      <div class="partner-logo">
+          <img src="assests/images/brand001.png" alt="Partner 1">
+      </div>
+      <div class="partner-logo">
+          <img src="assests/images/brand002.png" alt="Partner 2" >
+      </div>
+      <div class="partner-logo">
+          <img src="assests/images/brand00.png" alt="Partner 3">
+      </div>
+      <div class="partner-logo">
+          <img src="assests/images/brand4.png" alt="Partner 4" >
+      </div>
+      <div class="partner-logo">
+          <img src="assests/images/brand005.png" alt="Partner 5" >
+      </div>
+      <div class="partner-logo">
+        <img src="assests/images/brand006.png" alt="Partner 5" >
+    </div>
+  </div>
+</section>
+<h2 class="text-center mb-4" id="testimonials"style="padding-top: 60px;">Our Testimonial</h2>
+<section>
+<div class="section container1">
+    <div class="card1 left">
+      
+      <div class="content">
+        
+        <p>BM TECHX has completely transformed our online presence! Their SEO strategies skyrocketed our website traffic, and their innovative social media campaigns are game-changers. Highly recommend it!
+        </p>
+        <h6>– Samantha M., E-Commerce Business Owner </h6>
+      </div>
+    </div>
+    <div class="card1 right">
+      
+      <div class="content">
+       
+        <p>The team at BM TECHX is simply the best! Their creative designs and marketing strategies helped us stand out in a competitive market. Thank you for your dedication!</p>
+        <h6>– Rajesh K., Startup Founder  </h6>
+      </div>
+    </div>
+    <div class="card1 left">
+     
+      <div class="content">
+        
+        <p>Working with BM TECHX was a fantastic experience! They understood our needs perfectly and delivered campaigns that boosted our customer engagement.</p>
+        <h6>– Amit P., Event Organizer  </h6>
+      </div>
+    </div>
+    <div class="card1 right">
+       
+        <div class="content">
+         
+          <p>Their team is friendly, responsive, and incredibly talented. Thanks to BM TECHX, our app launch was a huge success, and we gained significant traction in just weeks!</p>
+          <h6>– Maria G., Mobile App Developer  </h6>
+        </div>
+      </div>
+   
+  </div>
+  
+</section><br><br>
+
+<div class="gallery-container">
+  <h2 class="text-center mb-4" id="pricing">Price</h2>
+  <div class="options">
+    <p class="option active" data-filter="all">All</p>
+    <p class="option" data-filter="web">Web Development</p>
+    <p class="option" data-filter="digital">Digital Marketing</p>
+    <p class="option" data-filter="branding">Branding</p>
+    <p class="option" data-filter="packages">Custom Packages</p>
+    
+  </div>
+  <div class="images">
+    <div class="image-item web">
+      <h2><span class="price"> ₹4,999 </span> Website Starter Pack</h2>
+      <p>A 3-page dynamic website with a contact form, basic SEO, and mobile responsiveness.</p>
+      <p>Ideal for small business owners looking for a budget-friendly online presence.
+        </p>
+    </div>
+    <div class="image-item web">
+      <h2>E-commerce Starter Pack <span class="price">₹9,999</span> 
+      </h2>
+      <p>
+        Single-page product catalog and payment gateway integration (e.g., Razorpay).
+        </p>
+        <p>
+          Includes 5 product listings and a basic admin panel.
+          </p>
+    </div>
+    <div class="image-item digital">
+      <h2>Social Media Starter Pack <span class="price">₹5,999</span> 
+      </h2>
+      <p>10 social media posts/month (Facebook, Instagram).
+      </p>
+      <p>Caption writing and 2 ad campaigns setup.</p>
+    </div>
+    <div class="image-item digital">
+      <h2>Digital Visibility Booster <span class="price">₹9,999</span> 
+      </h2>
+      <p>Google My Business setup with optimization.
+      </p>
+      <p>SEO for 5 keywords.
+      </p>
+    </div>
+    <div class="image-item branding">
+      <h2>Business Branding Essentials         <span class="price">₹3,999</span> 
+      </h2>
+      <p>Logo design + Business card + Social media cover.</p>
+    </div>
+    <div class="image-item branding">
+      <h2> Complete Branding Pack <span class="price">₹14,999</span> 
+      </h2>
+      <p>Includes logo, stationery design (letterhead, invoice, visiting card), and a company profile.
+      </p>
+    </div>
+    <div class="image-item packages">
+      <h2>Startup Success Package        <span class="price">₹29,999</span> 
+      </h2>
+      <p>A fully branded website, digital marketing strategy, and business branding essentials.
+      </p>
+      <p>Perfect for entrepreneurs launching their ventures.
+      </p>
+    </div>
+    <div class="image-item packages">
+      <h2>Local Lead Generation Campaign<span class="price">₹6,999</span> 
+      </h2>
+      <p>Targeted ads for Tamil Nadu and Pondicherry to generate inquiries.
+      </p>
+    </div>
+</div>
+</div>
+<footer id="contact">
+  <div class="footer-left">
+    <a class="lets-connect" href="https://wa.me/9944940051" target="_blank">Let's Connect</a>
+</div>
+
+  <div class="footer-center">
+      <div class="social-icons">
+          <a href="https://www.instagram.com/bmtechxpondy_/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/9944940051" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61567695654956" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@BMtechx-abm" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+  </div>
+
+  <div class="footer-right">
+      <div class="address">
+        252,2nd Floor, <br>
+        M G Road, Kottakuppam,<br>
+        Vanur taluk,<br>
+        Villupuram district.
+      </div>
+  </div>
+</div>
+</footer>
+<script src="script.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,486 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFD700; /* Yellow accent color */
+}
+
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  background-color: black;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  right: 0;
+    z-index: 1000;   position: fixed;
+}
+.navbar-brand img {
+  height: 40px;
+}
+.nav-link {
+  color: yellow!important;
+  margin-right: 1rem;
+}
+.nav-link:hover {
+  color: white !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('your-image-url.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-section p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+.btn-custom {
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
+.btn-custom:hover {
+  background-color: #e6c200;
+}
+
+/* About Section */
+.about-section {
+  padding: 2rem 1rem;
+}
+.about-section img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.about-section h2 {
+  margin-bottom: 1rem;
+}
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Carousel */
+.card {
+  width: 100%;
+}
+.carousel .card {
+  background-color: black; 
+  color: white; 
+  text-align: center; 
+  border: 2px solid #fff; /* Border wraps the entire card */
+  border-radius: 8px; 
+  overflow: hidden; /* Ensures rounded corners apply to all content */
+  width: 300px; 
+  margin: 20px auto; 
+ 
+}
+.carousel .card:hover {
+  transform: rotateY(360deg); /* 360-degree flip effect */
+}
+.carousel .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: black;
+}
+.carousel-item .card-body{
+  background-color: black;
+  border: 3px white;
+}
+.card-body .card-title{
+  color: yellow;
+}
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
+  .partner-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  }
+  .partner-logo img {
+  width: 80%;
+  height: auto;
+  }
+.partner-logo img:hover {
+  transform: scale(1.1);
+}
+
+.partner-logo:hover {
+  transform: rotate(360deg);
+  }
+  /* Responsive Heading */
+  @media (max-width: 768px) {
+  .partners-section h1 {
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-left: 40px;
+  }
+  }
+  @media (max-width: 480px) {
+  .partners-section h1 {
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+  }
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+      font-size: 2.5rem;
+  }
+  .hero-section p {
+      font-size: 1rem;
+  }
+  .about-section img {
+      margin-bottom: 1rem;
+  }
+  .carousel .card {
+      margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+      font-size: 2rem;
+  }
+  .hero-section p {
+      font-size: 0.9rem;
+  }
+  
+}
+
+
+/* General styling for cards */
+.card {
+  margin: auto;
+}
+
+/* For larger screens */
+@media (min-width: 992px) {
+  .carousel-item .col-lg-3 {
+    display: block;
+  }
+}
+
+
+/* Section styles */
+.section {
+padding-top: 40px;
+}
+
+/* Container styles for centering cards */
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Card styles */
+.card1 {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  opacity: 0; /* Start with the card hidden */
+  transform: translateX(100%); /* Start off-screen */
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Left-aligned card animation */
+.card1.left {
+  animation-name: slideFromLeft;
+
+}
+
+/* Right-aligned card animation */
+.card1.right {
+  animation-name: slideFromRight;
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for sliding in from the right */
+@keyframes slideFromRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Icon styles */
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Header and paragraph styles */
+.content h6 {
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+/* Apply delays to alternate the cards' animations */
+.card1:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.card1:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.card1:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.card1:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.price{
+  color: yellow;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+  border-top: 2px solid #ffd700;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.lets-connect {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.lets-connect:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-icons a i {
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.address {
+  font-size: 14px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  footer {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+      text-align: center;
+      flex-direction: column;
+      padding-left: 3px;
+      padding-right: 3px;
+  }
+
+  .address {
+      text-align: center;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.gallery-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.option {
+  margin: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: wheat;
+  position: relative;
+}
+
+.option.active {
+  color: yellow;
+}
+
+.option.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: yellow;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-item {
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s ease;
+  flex: 1 1 calc(33.333% - 20px); /* Default to three columns */
+  max-width: calc(33.333% - 20px);
+  background-color:  black;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border: 1px white solid;
+}
+
+.image-item h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.image-item p {
+  font-size: 16px;
+  color: white;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-item {
+    flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-item {
+    flex: 1 1 100%; /* One column on small screens */
+    max-width: 100%;
+  }
+}
+
+
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('path-to-your-font-file.woff2') format('woff2'),
+       url('path-to-your-font-file.woff') format('woff');
+}
